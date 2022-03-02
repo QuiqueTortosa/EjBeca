@@ -8,7 +8,11 @@ public class main {
         System.out.println("Cambio en la rama restar");
         System.out.println("Cambio en la rama master");
         System.out.println("Cambio en la rama restar2");
+//<<<<<<< HEAD
         System.out.println("Cambio desde repositorio local 1");
+//=======
+        System.out.println("Cambio desde Repositorio Local 2");
+//>>>>>>> f3f63ba79242eadef20487c8e5bbd17300368e88
         Suma su = new Suma(0);
         Resta r = new Resta(0);
         int opcion, n1, n2, suma, sumAc, resta, restAc;
