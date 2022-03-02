@@ -19,6 +19,7 @@ public class Suma {
     }
 
     public int sumA(int n1) {
+        System.out.println("Cambio en la rama master");
         this.setSumaAcum(n1 + this.getSumaAcum());
         return sumaAcum;
     }
