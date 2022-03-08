@@ -7,17 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
 </head>
-<main>
+<body>
     <header>
         <nav>
             <div class="rightLinks">
                 <a href="/Ejercicio02/"><img class="homeIcon" src="resources/icon/3844470_home_house_icon.png" /></a>
-                <a href="servicios.html">Servicios</a>
-                <a href="trabajos.html">Trabajo</a>
-                <a href="contacto.html">Contacto</a>
+                <a class="linkText" href="servicios.html">Servicios</a>
+                <a class="linkText" href="trabajos.html">Trabajo</a>
+                <a class="linkText" href="noticias.html">Noticias</a>
+                <a class="linkText" href="contacto.html">Contacto</a>
             </div>
         </nav>
     </header>
+    <main>
     <section>
         <form action="procesarPeticion.jsp" method="get">
             <h1>Formulario de Contacto</h1>
@@ -43,10 +45,12 @@
             <br>
             <textarea style="resize: none;" rows="5" cols="50" name="observacionesT"></textarea>
             <br>
-            <input type="submit" value="Enviar" />
-            <input type="reset" value="Reiniciar" />
+            <input class="button" type="submit" value="Enviar" />
+            <input class="button" type="reset" value="Reiniciar" />
         </form>
     </section>
+</main>
+
     <footer>
         <div class="center ">
             <ul class="footerList ">
@@ -57,6 +61,6 @@
             </ul>
         </div>
     </footer>
-</main>
+</body>
 
 </html>
