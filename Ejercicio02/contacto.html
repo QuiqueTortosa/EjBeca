@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
     <header>
         <nav>
@@ -16,48 +17,53 @@
                 <a class="linkText" href="trabajos.html">Trabajo</a>
                 <a class="linkText" href="noticias.html">Noticias</a>
                 <a class="linkText" href="contacto.html">Contacto</a>
+
+                <a class="linkTextSmallScreen" href="servicios.html">S<span class="mostrarLink">Service</span></a>
+                <a class="linkTextSmallScreen" href="trabajos.html">T<span class="mostrarLink">Trabajo</span></a>
+                <a class="linkTextSmallScreen" href="noticias.html">N<span class="mostrarLink">Noticias</span></a>
+                <a class="linkTextSmallScreen" href="contacto.html">C<span class="mostrarLink">Contacto</span></a>
             </div>
         </nav>
     </header>
     <main>
-    <section>
-        <form action="procesarPeticion.jsp" method="get">
-            <h1>Formulario de Contacto</h1>
-            <label for="nombreL">Nombre: </label>
-            <input type="text" name="nombreI" placeholder="Escribe tu nombre" />
-            <br>
-            <br>
-            <label for="apellidos">Apellidos: </label>
-            <input type="text" name="apellidoI" placeholder="Escribe tu apellido" />
-            <br>
-            <br>
-            <label for="correoL">Correo electrónico: </label>
-            <input type="text" name="correoI" placeholder="ejemplo@gmail.com" />
-            <br>
-            <br>
-            <label for="tipoIncidencia">¿Cual es el motivo de contacto? </label>
-            <br>
-            <input type="radio" name="tipoIncidencia" value="T" />Trabajo<br />
-            <input type="radio" name="tipoIncidencia" value="D" />Dudas<br />
-            <input type="radio" name="tipoIncidencia" value="O" checked/>Otro<br />
-            <br>
-            <label for="observacionesL">Observaciones: </label>
-            <br>
-            <textarea style="resize: none;" rows="5" cols="50" name="observacionesT"></textarea>
-            <br>
-            <input class="button" type="submit" value="Enviar" />
-            <input class="button" type="reset" value="Reiniciar" />
-        </form>
-    </section>
-</main>
+        <div class="flexWork">
+            <form action="procesarPeticion.jsp" method="get">
+                <h1>Formulario de Contacto</h1>
+                <label for="nombreL">Nombre: </label>
+                <input type="text" name="nombreI" placeholder="Escribe tu nombre" />
+                <br>
+                <br>
+                <label for="apellidos">Apellidos: </label>
+                <input type="text" name="apellidoI" placeholder="Escribe tu apellido" />
+                <br>
+                <br>
+                <label for="correoL">Correo electrónico: </label>
+                <input type="text" name="correoI" placeholder="ejemplo@gmail.com" />
+                <br>
+                <br>
+                <label for="tipoIncidencia">¿Cual es el motivo de contacto? </label>
+                <br>
+                <input type="radio" name="tipoIncidencia" value="T" />Trabajo<br />
+                <input type="radio" name="tipoIncidencia" value="D" />Dudas<br />
+                <input type="radio" name="tipoIncidencia" value="O" checked />Otro<br />
+                <br>
+                <label for="observacionesL">Observaciones: </label>
+                <br>
+                <textarea name="observacionesT"></textarea>
+                <br>
+                <input class="button" type="submit" value="Enviar" />
+                <input class="button" type="reset" value="Reiniciar" />
+            </form>
+            <img class="imgD" src="resources/images/contacto.gif" />
+        </div>
+    </main>
 
     <footer>
         <div class="center ">
             <ul class="footerList ">
-                <li class="footerListItem "><a href="# "><strong>Home</strong></a></li>
-                <li class="footerListItem "><a href="# "><strong>Sobre Nosotros</strong></a></li>
-                <li class="footerListItem "><a href="# "><strong>Terminos</strong></a></li>
-                <li class="footerListItem "><a href="# "><strong>Política de privacidad</strong></a></li>
+                <li class="footerListItem"><a href="#"><strong>Sobre Nosotros</strong></a></li>
+                <li class="footerListItem"><a href="#"><strong>Terminos</strong></a></li>
+                <li class="footerListItem"><a href="#"><strong>Política de privacidad</strong></a></li>
             </ul>
         </div>
     </footer>
