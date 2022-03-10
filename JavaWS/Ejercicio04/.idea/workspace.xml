@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d8efc281-c12a-4400-9565-aae42baa03b7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../.idea/BabelBeca.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Ejercicio02/.project" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ejercicio02/resources/icon/3844470_home_house_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ejercicio02/resources/icon/carton.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ejercicio02/resources/icon/cristal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ejercicio02/resources/icon/metal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ejercicio02/resources/icon/odin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ejercicio02/resources/images/ManoAmigable.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ejercicio02/resources/images/Robot.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ejercicio02/resources/images/contacto.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ejercicio02/resources/images/formula.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ejercicio02/resources/images/manoRobotica.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ejercicio02/resources/images/top1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ejercicio02/resources/images/trabajo.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
-    </list>
+    <list default="true" id="d8efc281-c12a-4400-9565-aae42baa03b7" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
