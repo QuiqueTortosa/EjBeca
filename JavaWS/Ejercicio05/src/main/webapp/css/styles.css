@@ -1,33 +1,94 @@
-div {
-	    position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        width: 250px;
-        height: 250px;
-        background-color: #2390A1;
-        border: 4px solid #05353B;
-        border-radius: 20px;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        justify-content: center;	
-        gap: 10px;
+#loginDiv {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 25vw;
+	height: 45vh;
+	background-color: #2390A1;
+	border: 20px solid #05353B;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
 }
 
 .text {
-	margin: 10px;
+	height: 5vh;
+	width: 20vw; margin : 10px;
 	border-radius: 5px;
 	border: none;
+	outline: none;
+	margin: 10px;
 }
 
 .button {
 	margin: 0px;
 	border-radius: 5px;
-    border: 2px solid #787C7E;
-    width: 70px;
+	border: 2px solid #787C7E;
+	width: 70px;
 	height: 25px;
 	cursor: pointer;
-	background-color:#AFB4B8;
+	background-color: #AFB4B8;
+}
+
+.button:hover {
+	border: 3px solid #000000;
+}
+
+@media screen and (max-width: 1100px) {
+	#loginDiv {
+	    height: 45vh;
+		width: 35vw;
+	}
+	.text {
+		height: 5vh;
+		width: 30vw;
+		margin: 10px;
+	}
+	#loginH1 {
+		font-size: 50px;
+	}
+	.button {
+		width: 120px;
+		height: 35px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	#loginDiv {
+		height: 70vh;
+		width: 35vw;
+	}
+	.text {
+		height: 3vh;
+		width: 35vw;
+		margin: 10px;
+	}
+	#loginH1 {
+		font-size: 60px;
+	}
+	
+	.button {
+		width: 120px;
+		height: 45px;
+	}
+}
+
+
+@media screen and (max-height: 575px) {
+	#loginDiv {
+		height: 65vh;
+		width: 35vw;
+	}
+}
+
+@media screen and (max-height: 400px) {
+	#loginDiv {
+		height: 85vh;
+		width: 45vw;
+	}
 }

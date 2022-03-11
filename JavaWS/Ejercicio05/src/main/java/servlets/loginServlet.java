@@ -19,7 +19,6 @@ public class loginServlet extends HttpServlet {
 	
 	private static final long serialVersionUID = 1L;
 	private ArrayList<Persona> personList=new ArrayList<Persona>();
-	private Persona persona = new Persona();
        
     /**
      * @see HttpServlet#HttpServlet()

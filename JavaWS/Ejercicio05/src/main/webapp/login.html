@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
+<meta charset="utf-8" />
 <title>Login</title>
 <link rel="stylesheet" href="css/styles.css">
+<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
 </head>
 <body>
-	<div>
-		<h1>Login</h1>
-		<form action="loginServlet" method="post">
-			<input class="text" type="text" name="nombre" placeholder="Nombre..."/>
-			<br/>
-			<input class="text" type="password" name="contraseña" placeholder="Contraseña..."/>
-			<br/>
-			<br/>
-		 	<input class="button" type="submit" value="Login"/>	
+	<div id="loginDiv">
+		<h1 id="loginH1">Login</h1>
+		<form action="loginServlet" method="get">
+			<input class="text" type="text" name="nombre" placeholder="Nombre..." />
+			<br /> <input class="text" type="password" name="contraseÃ±a"
+				placeholder="ContraseÃ±a..." /> <br /> <br /> <input class="button"
+				type="submit" value="Login" />
 		</form>
 	</div>
 </body>

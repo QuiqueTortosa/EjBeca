@@ -1,0 +1,191 @@
+
+html {
+    margin: 0x;
+}
+body{
+    margin: 0px;
+}
+
+.header {
+    height:100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.headerImage{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 20%;
+    left: 20%;
+    transform: translate(-20%, -20%);
+}
+
+.headerText {
+    position: relative;
+    color: #A8B4B4;
+    font-family: "Ubuntu", sans-serif;
+    font-size:1vw;
+    height: 20vh;
+    top: 5%;
+    left: 5%;
+    transition: font-size 3s;
+    transition-delay: 1s;
+}
+
+.headerText:hover {
+    font-size:20px;
+ }
+
+.headerCurriculum {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    width: 5vw;    
+    animation: flechaMov 2s infinite alternate;
+    left: 10%;
+}
+
+@keyframes flechaMov {
+    from {
+        top: 50%;
+    } to {
+        top: 55%;
+    }
+}
+
+.flechaImg {
+    position: relative;
+    width: 35px;
+    height: 45px;
+}
+
+
+main{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 20px 15vw;
+}
+
+.imgC {
+    height: 35px;
+    width: 35px;
+}
+
+.titleD {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.fotoPG {
+    float: right;
+    margin-left: 10px;
+    margin-top: 30px;
+    width: 100x;
+    height: 200px
+}
+
+.fotoPQ {
+    display: none;
+}
+
+.perfilText {
+    margin-top: 0px;
+}
+
+.borderStyle {
+    margin-top: 50px;
+    border: 0,1px solid #A8B4B4;
+}
+
+ul li{
+    padding-bottom: 15px;
+}
+
+.titleListC{
+    font-size: 25px;
+    font-family: 'Ubuntu', sans-serif, italic;
+    font-style: oblique;
+}
+
+.iconList li {
+    display: inline;
+    list-style: none;
+    margin-right: 30px;
+}
+
+.imgList {
+    width: 80px;
+    height: 80px;
+    transition: width 3s height 3s;
+    transition-delay: 0.2s;
+}
+
+.imgList:hover {
+    height: 110px;
+    width: 110px;
+}
+
+.contactList li {
+    list-style: none;
+    margin-right: 30px;
+}
+
+footer {
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+.footerList li {
+    display: inline;
+    list-style: none;
+    margin-right: 100px;
+}
+
+.footerImgList {
+    width: 80px;
+    height: 80px;
+    transition: width 3s height 3s;
+    transition-delay: 0.2s;
+}
+
+.footerImgList:hover {
+    height: 90px;
+    width: 90px;
+}
+
+@media screen and (max-width: 600px){
+    .headerCurriculum {
+        left: 20%;
+    }
+
+    .headerText {
+        position: relative;
+        color: #A8B4B4;
+        font-family: "Ubuntu", sans-serif;
+        font-size:1.5vw;
+        height: 20vh;
+        top: 5%;
+        left: 5%;
+        transition: font-size 3s;
+        transition-delay: 1s;
+    }
+    
+    .headerText:hover {
+        font-size:15px;
+     }
+
+
+     .fotoPG {
+         display: none;
+    }
+
+     .fotoPQ {
+         width: 30vw;
+         height: 150px;
+         margin-left: 20vw;
+         display: block;
+     }
+}
