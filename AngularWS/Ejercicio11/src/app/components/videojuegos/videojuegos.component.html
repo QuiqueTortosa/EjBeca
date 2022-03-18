@@ -1,0 +1,67 @@
+<div class="center">
+  <h1>VideoJuegos</h1>
+  <div class="form">
+    <div class="formSpan">
+      <span>Titulo: </span>
+      <span>Compañia: </span>
+      <span>Valoración: </span>
+    </div>
+    <div class="formInput">
+      <input [(ngModel)]="titulo" placeholder="Insertar Titulo">
+      <input [(ngModel)]="compania" placeholder="Insertar Compañia">
+      <input [(ngModel)]="valoracion" placeholder="Insertar Valoracion">
+    </div>
+  </div>
+  <p *ngIf="errorFlag==true" id="error">Rellena todos los campos</p>
+  <div>
+    <button *ngIf="!editarFlag" (click)="insertar()">Insertar</button>
+    <button *ngIf="editarFlag" (click)="guardar()">Guardar</button>
+    <button id="vaciarB" (click)="vaciar()">Vaciar</button>
+  </div>
+  <div style="border: 1px solid #05353B;">
+    <table>
+      <thead>
+        <tr style="    text-align: left;
+      align-items: left;">
+          <th>Id</th>
+          <th>Titulo</th>
+          <th>Compania</th>
+          <th>Valoracion</th>
+          <th>Editar</th>
+          <th>Borrar</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let v of videojuegoL; index as i">
+          <td *ngIf="i%2==0" style="background-color: #dce3e4;">{{v.id}}</td>
+          <td *ngIf="i%2!=0">{{v.id}}</td>
+          <td *ngIf="i%2==0" style="background-color: #dce3e4;">{{v.titulo}}</td>
+          <td *ngIf="i%2!=0">{{v.titulo}}</td>
+          <td *ngIf="i%2==0" style="background-color: #dce3e4;">{{v.compania}}</td>
+          <td *ngIf="i%2!=0">{{v.compania}}</td>
+          <td *ngIf="i%2==0" style="background-color: #dce3e4;">{{v.valoracion}}</td>
+          <td *ngIf="i%2!=0">{{v.valoracion}}</td>
+          <td *ngIf="i%2==0" style="background-color: #dce3e4;">
+            <button mat-icon-button (click)="editar(v)">
+              <mat-icon>edit</mat-icon>
+            </button>
+          </td>
+          <td *ngIf="i%2!=0">
+            <button mat-icon-button (click)="editar(v)">
+              <mat-icon>edit</mat-icon>
+            </button>
+          <td *ngIf="i%2==0" style="background-color: #dce3e4;">
+            <button mat-icon-button (click)="eliminar(v.id)"> 
+              <mat-icon>delete</mat-icon>
+            </button>
+          </td>
+          <td *ngIf="i%2!=0">
+            <button mat-icon-button (click)="eliminar(v.id)">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
