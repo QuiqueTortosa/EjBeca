@@ -1,0 +1,33 @@
+<div>
+  <div class="center">
+    <h1>Calculadora</h1>
+    <label for="nombre">Nombre</label>
+    <div>
+        <input id="n1" [(ngModel)]="n1"/>
+        <input id="n2" [(ngModel)]="n2"/>
+    </div>   
+    <div class="flexRow" [ngSwitch]="operation">
+      <p *ngSwitchCase="'suma'">
+        El resultado de la {{operation}} es: {{resultado}}
+      </p>
+      <p *ngSwitchCase="'resta'">
+        El resultado de la {{operation}} es: {{resultado}}
+      </p>
+      <p *ngSwitchCase="'division'">
+        El resultado de la {{operation}} es: {{resultado}}
+      </p>
+      <p *ngSwitchCase="'multiplicacion'">
+        El resultado de la {{operation}} es: {{resultado}}
+      </p>
+      <p *ngSwitchDefault>
+        El resultado de la {{operation}} es: {{resultado}}
+      </p>
+    </div>
+    <div id="opciones">
+      <button class="button" (click)="sumar()">Sumar</button>
+      <button class="button" (click)="restar()">Restar</button>
+      <button class="button" (click)="dividir()">Dividir</button>
+      <button class="button" (click)="multiplicar()">Multiplicar</button>
+    </div>
+  </div>
+</div>

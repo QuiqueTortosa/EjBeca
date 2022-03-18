@@ -18,7 +18,7 @@ class Equipo {
     toString() {
         let resultado: String = `Equipo: ${this._nombre}\nFecha Origen: ${this._fechaFundacion}\nJugadores:\n`
         for (let jugador of this._jugadoresLista) {
-            resultado += `\tNombre: ${jugador.getNombre()}, Edad: ${jugador.getEdad()}, Pais: ${jugador.getPais()}\n`
+            resultado += `\tNombre: ${jugador.nombre}, Edad: ${jugador.edad}, Pais: ${jugador.pais}\n`
         }
         console.log(resultado)
     }
@@ -39,15 +39,15 @@ class Jugador {
         this._pais = pais;
     }
 
-    getNombre() {
+    public get nombre() {
         return this._nombre
     }
 
-    getEdad() {
+    public get edad() {
         return this._edad
     }
 
-    getPais() {
+    public get pais() {
         return this._pais
     }
 
