@@ -1,0 +1,60 @@
+.warnL {
+    color: red
+}
+
+.warnLG {
+    color: green;
+}
+
+.flex {
+    position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+    width:30%;
+    height: 50%;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    justify-content: center;
+    text-align: center;
+	align-items: center;
+    border: 4px solid #05353B;
+    background-color: #1BC2C5;
+}
+
+input {
+    width: 200px;
+    border:none;
+    height: 25px;
+    margin-bottom: 3px;
+    inline:none;
+    outline: none;
+}
+
+input:focus {
+    border-bottom: 3px solid #000000;
+    margin-bottom: 0px;
+}
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+button:hover{
+    border: 3px solid #0C6304;
+    padding: 2px 12px;
+}
+
+.buttonFlex {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+}
