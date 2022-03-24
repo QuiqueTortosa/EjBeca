@@ -15,10 +15,8 @@ export class GestorUsuario {
                 return 0
             }
             else if(!(password == passwordCheck)){
-                console.log("Vale2")
                 return 1;
             } else {
-                console.log("vale3")
                 this.du.anadirUsuario(new Usuario(gmail,password,telefono,nombre))
                 return 2;
             }
