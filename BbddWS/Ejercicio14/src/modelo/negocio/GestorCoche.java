@@ -53,11 +53,11 @@ public class GestorCoche {
 	 * en caso de que no se de de alta
 	 */
 	public int editar(Coche c) {
-		if (daoCoche.findById(c.getId()) != null)
+		if (daoCoche.findById(c.getId()) == null)
 			return 0;
 		else if (c.getMatricula().length() != 7)
 			return 1;
-		else if (daoCoche.findByMatricula(c.getMatricula()) != null)
+		else if (daoCoche.findByMatricula(c.getMatricula()) != null && (daoCoche.findByMatricula(c.getMatricula()) == daoCoche.findById(c.getId())))
 			return 2;
 		else if (c.getKm() < 0)
 			return 3;
