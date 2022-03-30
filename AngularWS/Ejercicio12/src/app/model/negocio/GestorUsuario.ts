@@ -38,12 +38,19 @@ export class GestorUsuario {
         }
     }
 
+    /*
+    *@param id del Usuario
+    *@return usuario si lo encuentra undefined si no lo encuentra
+    */
     public getById(id: number): Usuario | undefined {
         return this.du.getById(id)
     }
 
+    /*
+    *@param gmail del Usuario
+    * @return el usuario, en caso contrario devuelve null
+    */
     public getByGmail(gmail: string): Usuario | undefined {
         return this.du.getByGmail(gmail)
     }
-
 }

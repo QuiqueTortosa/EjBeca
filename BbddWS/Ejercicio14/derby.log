@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Tue Mar 29 12:32:05 CEST 2022:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.2 - (1629631): instance a816c00e-017f-d53b-9033-0000074b7220 
+on database directory C:\Users\usuario\Desktop\BabelBeca\BbddWS\Ejercicio14\bbdd with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@2cdf8d8a 
+Loaded from file:/C:/Users/usuario/Desktop/BabelBeca/Info/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=11.0.13+10-LTS-370
+user.dir=C:\Users\usuario\Desktop\BabelBeca\BbddWS\Ejercicio14
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

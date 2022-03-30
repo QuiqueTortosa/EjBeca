@@ -2,7 +2,7 @@ import { Usuario } from "../entidades/Usuario"
 
 export class DaoUsuario {
 
-    private static listaUsuarios: Usuario[] = []
+    private static listaUsuarios: Usuario[] = [] 
 
     static {
         this.listaUsuarios.push(new Usuario("a@gmail.com","a","123123123","a"))
@@ -12,10 +12,10 @@ export class DaoUsuario {
     }
 
     /*
-    * Devuelve el usuario, en caso contrario devuelve null
+    *@param gmail del Usuario
+    * @return el usuario, en caso contrario devuelve null
     */
     public getByGmail(gmail: String): Usuario | undefined{
-        //console.log("gmail"+gmail)
         let u: Usuario;
         for(u of DaoUsuario.listaUsuarios) {
             if(u.gmail === gmail){
@@ -26,6 +26,10 @@ export class DaoUsuario {
         return undefined;
     }
 
+    /*
+    *@param id del Usuario
+    *@return usuario si lo encuentra undefined si no lo encuentra
+    */
     public getById(id: number): Usuario | undefined {
         let u: Usuario;
         for(u of DaoUsuario.listaUsuarios) {
@@ -36,6 +40,9 @@ export class DaoUsuario {
         return undefined;
     }
 
+    /*
+    *@param el usuario a añadir
+    */
     public anadirUsuario(usuario: Usuario) {
         DaoUsuario.listaUsuarios.push(usuario)
     }
