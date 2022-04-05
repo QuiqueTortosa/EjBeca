@@ -20,7 +20,7 @@ public class Fortaleza {
 	 * Crea un hilo a todos los personajes de la lista, y van entrando a la fortaleza 
 	 * 1 a 1, si el jefe tiene menos de 0 de vida dejan de entrar
 	 */
-	public synchronized void entrar() {
+	public void entrar() {
 		for(Personaje p: personajeL) {	
 			try {
 				if(this.jefe.getVida() <= 0)
@@ -37,7 +37,7 @@ public class Fortaleza {
 		}
 		
 	}
-	
+
 	public void anadirPersonaje(Personaje personaje) {
 		personaje.setEnemigo(jefe);
 		personajeL.add(personaje);
