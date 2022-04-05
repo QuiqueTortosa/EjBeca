@@ -21,7 +21,7 @@ public class Jefe extends Personaje{
 		int ira = ira();
 		getArma().setDanio(getArma().getDanio()+ira);
 		p.setVida(p.getVida()-danio);
-		System.out.println("El jefe ha aumentado su daño en: "+ira+". Su daño actual es de: "+getArma().getDanio());
+		System.out.println("El jefe ha aumentado su daño en: "+ira+". Su daño actual maximo es de: "+getArma().getDanio());
 		System.out.println(getNombre()+" ha inflingido "+danio);
 		System.out.println("\nVida de "+p.getNombre()+": " + p.getVida());
 		System.out.println("Vida de "+getNombre()+": " + getVida());
@@ -33,7 +33,7 @@ public class Jefe extends Personaje{
 	 */
 	public int ira() {
 		int prob = (int) Math.floor(Math.random() * (100 - getAtributo()/2 + 1) + getAtributo()/2);
-		if (prob > 30) {
+		if (prob > 40) {
 			return 0;
 		} else {
 			int danioExtra = (int) Math.floor(Math.random() * (30 - 5 + 1) + 5);
