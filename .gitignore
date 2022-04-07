@@ -1,9 +1,12 @@
 WsLMSGI/
-*.txt
 /.metadata/
 Info/
 .idea/
 .metadata/
 Info/
 RepositorioProfe/
+*.txt
+!coches.txt
+
+
 
