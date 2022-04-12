@@ -19,7 +19,6 @@ public class GestorPersona {
 		if (p.getName() == null || p.getGmail() == null || p.getPassword() == null)
 			return 0;
 		else if (daoPersona.findByGmail(p.getGmail()) != null) {
-			System.out.println("AAAAA"+daoPersona.findByGmail(p.getGmail()));
 			return 1;			
 		}
 		else {
@@ -41,9 +40,10 @@ public class GestorPersona {
 			return 0;
 		else {
 			Persona pFind = daoPersona.findByGmail(gmail);
-			System.out.println("*************************************************"+pFind.getGmail());
-			if(pFind.getGmail().equals(gmail) && pFind.getPassword().equals(password))
+			if(pFind.getGmail().equals(gmail) && pFind.getPassword().equals(password)) {
+				System.out.println("Usuario "+gmail+" logeado con exito");
 				return 1;
+			}
 			else
 				return 2;
 		}
