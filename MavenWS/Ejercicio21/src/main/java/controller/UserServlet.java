@@ -50,19 +50,9 @@ public class UserServlet extends HttpServlet {
     		JSONObject json =new JSONObject();
             json.put("validation",  "true");
     		response.getWriter().write(json.toString());;
-            //RequestDispatcher rs = request.getRequestDispatcher("Welcome");
-			/*request.setAttribute("nombreUsuario", email);
-			request.setAttribute("password", pass);
-			response.getWriter().write(gp.getByGmail(email).toString());
-			response.getWriter().write(json.toString());*/
-			
-            //rs.forward(request, response);
         }
         else
         {
-         /*  out.println("Uusername or Password incorrect");
-           RequestDispatcher rs = request.getRequestDispatcher("index.html");
-           rs.include(request, response);*/
     		JSONObject json =new JSONObject();
             json.put("validation",  "false");
     		response.getWriter().write(json.toString());;
