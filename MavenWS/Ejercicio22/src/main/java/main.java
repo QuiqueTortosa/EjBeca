@@ -3,6 +3,8 @@ import modelo.entidad.Coche;
 import modelo.negocio.GestorCoche;
 import java.util.Scanner;
 
+import org.json.JSONObject;
+
 import com.google.gson.Gson;
 
 import java.io.IOException;
@@ -36,9 +38,8 @@ public class main {
 				HttpClient client = HttpClient.newHttpClient();
 				HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
 				
-				Gson g = new Gson();  
-				String json = g.toJson(response.body()); 
-				if (json.contains("true")) {
+				JSONObject json = new JSONObject(response.body());
+				if (json.getBoolean("validation")) {
 					flag = true;
 					break;
 				} else {
