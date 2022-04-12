@@ -1,0 +1,19 @@
+<app-header></app-header>
+<div class="flexDesc">
+  <img [src]=videojuego?.icono>
+  <div class="flexDetails">
+    <div>
+      <strong>ID:</strong> {{videojuego?.id}}
+    </div>
+    <div>
+      <strong>Titulo:</strong> {{videojuego?.titulo}}
+    </div>
+    <div>
+      <strong>Compañia:</strong> {{videojuego?.compania}}
+    </div>
+    <div>
+      <strong>Compañia:</strong> {{videojuego?.valoracion}}
+    </div>
+    <button [routerLink]="['/videojuegos',userId]">Volver</button>
+  </div>
+</div>

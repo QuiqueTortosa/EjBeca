@@ -1,0 +1,24 @@
+.flexTable{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.flexTable:hover {
+    font-size:30px;
+}
+
+.titulo {
+    width: 200px;
+}
+
+.id {
+    padding-right: 50px
+}
+
+img {
+    height: 50px;
+    width: 50px;
+}

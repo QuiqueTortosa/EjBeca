@@ -1,0 +1,25 @@
+.flex {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+    width: 350px;
+    box-shadow: 0 0 10px 8px #999;
+    gap: 20px;
+}
+.marginTop {
+    margin-top: 25px;
+}
+
+.marginBot{
+    margin-bottom: 25px;
+}
+
+.marginSides {
+    margin-left: 25px;
+    margin-right: 25px;
+}

@@ -1,0 +1,7 @@
+<app-header></app-header>
+<div class="flex">
+  <h1>Bienvenido {{user?.nombre}}</h1>
+  <div class="videojuego">
+    <app-videojuego *ngFor="let v of videojuegoList" (click)="getVideojuego(v.id)" [videojuego]="v"></app-videojuego>
+  </div>
+</div>

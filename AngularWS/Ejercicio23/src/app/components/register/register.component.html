@@ -1,0 +1,15 @@
+<div class="flex">
+  <h1>Registrar Usuario</h1>
+  <input type="text" [(ngModel)]="nombre" placeholder="Nombre...">
+  <input type="text" [(ngModel)]="telefono" placeholder="Telefono...">
+  <input type="text" [(ngModel)]="gmail" placeholder="Gmail...">
+  <input type="password" [(ngModel)]="password" placeholder="Password...">
+  <input type="password" [(ngModel)]="passwordCheck" placeholder="Repeat Password...">
+  <div [ngSwitch]="warnR">
+    <p class="warnR" *ngSwitchCase="0">Faltan parametros</p>
+    <p class="warnR" *ngSwitchCase="1">Las contraseñas no coinciden</p>
+    <p class="warnRG" *ngSwitchCase="2">Usuario creado correctamente</p>
+    <p *ngSwitchDefault></p>
+  </div>
+  <button (click)="registrar()">Registrar</button>
+</div>

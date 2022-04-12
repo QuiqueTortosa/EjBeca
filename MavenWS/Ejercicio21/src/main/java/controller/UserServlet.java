@@ -45,6 +45,8 @@ public class UserServlet extends HttpServlet {
         PrintWriter out = response.getWriter();
         String email = request.getParameter("email");
         String pass = request.getParameter("pass");
+        response.addHeader("Access-Control-Allow-Origin", "*");
+
         if(this.gp.login(email, pass) == 1)
         {
     		JSONObject json =new JSONObject();

@@ -1,0 +1,18 @@
+
+.flexHeader {
+    background-color: #31D1F4;
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    padding: 0 40px;
+    color: black;
+    text-decoration: none
+}
+a:hover {
+    font-size: 20px;
+} 

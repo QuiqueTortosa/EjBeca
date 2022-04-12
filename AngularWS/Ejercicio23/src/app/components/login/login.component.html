@@ -1,0 +1,15 @@
+<div class="flex">
+  <h1>Login</h1>
+  <input type="text" [(ngModel)]="gmail" placeholder="Gmail...">
+  <input type="password" [(ngModel)]="password" placeholder="Password...">
+  <div [ngSwitch]="warnL">
+    <p class="warnL" *ngSwitchCase="0">Faltan parametros</p>
+    <p class="warnL" *ngSwitchCase="1">La contraseña o el gmail es incorrecto</p>
+    <p class="warnLG" *ngSwitchCase="2">Login correcto</p>
+    <p *ngSwitchDefault></p>
+  </div>
+  <div class="buttonFlex">
+    <button (click)="login()">Login</button>
+    <button routerLink="/register">Registrar</button>
+  </div>
+</div>
