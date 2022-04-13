@@ -50,7 +50,7 @@ public class DaoPersonaSql {
 		}
 		boolean alta = true;
 		
-		String query = "insert into persona (gmail,name,passord) "+" values(?,?,?)";
+		String query = "insert into persona (gmail,name,password) "+" values(?,?,?)";
 		try {
 			//preparamos la query con valores parametrizables(?)
 			PreparedStatement ps = conexion.prepareStatement(query);

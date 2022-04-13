@@ -7,6 +7,17 @@ public class Persona {
 	private String name;
 	private String password;
 	
+	
+	public Persona() {
+		
+	}
+	
+	public Persona(String gmail, String name, String password) {
+		this.gmail = gmail;
+		this.name = name;
+		this.password = password;
+	}
+	
 	public int getId() {
 		return id;
 	}

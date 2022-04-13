@@ -13,12 +13,13 @@ public class GestorPersona {
 	 * 
 	 * @return 0 en caso de que falten parametros return 1 en caso de que
 	 * el usuario ya exista return 2 en caso de que se de de alta
-	 * return 4 en caso de que falle el alta
+	 * return 3 en caso de que falle el alta
 	 */
 	public int addUser(Persona p) {
 		if (p.getName() == null || p.getGmail() == null || p.getPassword() == null)
-			return 0;
-		else if (daoPersona.findByGmail(p.getGmail()) != null) {
+			return 0; 
+		else if (daoPersona.findByGmail(p.getGmail()).getGmail() != null) {
+			System.out.println(daoPersona.findByGmail(p.getGmail()));
 			return 1;			
 		}
 		else {
